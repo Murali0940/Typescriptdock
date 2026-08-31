@@ -16,8 +16,8 @@ test('Company User Login - Valid and Invalid', async ({ page }) => {
 
     // Login with valid credentials
     await loginPage.login(
-        loginData.validcompUser.username,
-        loginData.validcompUser.password
+        loginData.validcompUser.compusername,
+        loginData.validcompUser.comppassword
     );
 
     // Verify successful login

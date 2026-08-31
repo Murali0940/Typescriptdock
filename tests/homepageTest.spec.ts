@@ -59,6 +59,7 @@ test('Login', async ({ page }) => {
         await homepage.clickSearchBar();
         await homepage.enterTextInSearchbar('.pdf');
         await homepage.clickSearchIcon();
+        await homepage.doubleClickFirstFile();
 
     });
 
