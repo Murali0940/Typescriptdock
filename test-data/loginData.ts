@@ -1,13 +1,13 @@
 export const loginData = {
 
     validcompUser: {
-        username: 'Atkgi',
-        password: '1234'
+        compusername: 'Atkgi',
+        comppassword: '1234'
     },
 
     validUser: {
-        username: 'admin',
-        password: 'admin'
+        userusername: 'admin',
+        userpassword: 'admin'
     },
 
     invalidcompUser: {

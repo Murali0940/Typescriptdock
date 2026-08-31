@@ -20,19 +20,16 @@ export class CompLoginPage {
         this.page = page;
 
         this.username =
-            page.getByPlaceholder('Username');
+            page.locator('#username');
 
         this.password =
-            page.getByPlaceholder('Password');
+            page.locator('#password');
 
         this.selectLanguage = page.locator('#mySelect');
 
         this.logoutButton = page.locator('#logout');
 
-        this.loginButton =
-            page.getByRole('button', {
-                name: 'Login'
-            });
+        this.loginButton = page.getByRole('button', { name: 'Login' });
     }
 
     // Actions
@@ -49,7 +46,7 @@ export class CompLoginPage {
         await this.password.fill(password);
     }
 
-    async clickLogin() {
+    async compClickLogin() {
 
         await this.loginButton.click();
     }
@@ -70,6 +67,6 @@ export class CompLoginPage {
 
         await this.enterPassword(password);
 
-        await this.clickLogin();
+        await this.compClickLogin();
     }
 }

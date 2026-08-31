@@ -12,16 +12,11 @@ export class UserLoginPage {
 
         this.page = page;
 
-        this.username =
-            page.getByPlaceholder('Username');
+        this.username = page.locator('#username');
 
-        this.password =
-            page.getByPlaceholder('Password');
+        this.password = page.locator('#password');
 
-        this.loginButton =
-            page.getByRole('button', {
-                name: 'Login'
-            });
+        this.loginButton = page.locator('#login');
     }
 
 

@@ -5,3 +5,7 @@ git stash apply
 git add .
 git commit -m "Updated automation"
 git push origin main
+
+==========================================
+
+run test = npx playwright test tests/homepageTest.spec.ts --headed

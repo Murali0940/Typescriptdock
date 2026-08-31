@@ -22,7 +22,16 @@ export class Homepage {
 
     async clickSearchIcon() {
         await this.searchIcon.click();
+        await this.page.waitForTimeout(3000);
     }
+
+    async doubleClickFirstFile() {
+
+
+
+    }
+
+
 
 
 

@@ -20,11 +20,11 @@ test('Login', async ({ page }) => {
 
         // Login with valid credentials
         await loginPage.login(
-            loginData.validcompUser.username,
-            loginData.validcompUser.password
+            loginData.validcompUser.compusername,
+            loginData.validcompUser.comppassword
         );
 
-        await loginPage.clickLogin();
+        await loginPage.compClickLogin();
 
 
 
@@ -42,8 +42,8 @@ test('Login', async ({ page }) => {
         const userLoginPage = new UserLoginPage(page);
 
         await userLoginPage.login(
-            loginData.validUser.username,
-            loginData.validUser.password
+            loginData.validUser.userusername,
+            loginData.validUser.userpassword
         );
 
         await userLoginPage.clickLogin();
