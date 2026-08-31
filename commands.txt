@@ -1,0 +1,7 @@
+git status
+git stash
+git pull origin main
+git stash apply
+git add .
+git commit -m "Updated automation"
+git push origin main
