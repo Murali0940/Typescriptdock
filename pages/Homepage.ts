@@ -20,12 +20,14 @@ export class Homepage {
         await this.searchbar.fill(searchTerm);
     }
 
-    async clickSearchIcon() {
+    async clickSearchIcon() {  
         await this.searchIcon.click();
         await this.page.waitForTimeout(3000);
     }
 
     async doubleClickFirstFile() {
+
+
         
 
 
