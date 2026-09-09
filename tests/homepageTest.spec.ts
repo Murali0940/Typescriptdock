@@ -4,7 +4,7 @@ import { CompLoginPage } from '../pages/CompLoginPage';
 import { UserLoginPage } from '../pages/UserLoginPage';
 import { Homepage } from '../pages/Homepage';
 
-test('Login', async ({ page }) => {
+test('HomepageTest', async ({ page }) => {
 
     await test.step('Comp Login', async () => {
 
@@ -54,14 +54,17 @@ test('Login', async ({ page }) => {
         );
     });
 
-    await test.step('searchanyfile', async () => {
+    await test.step('search_pdf_file', async () => {
         const homepage = new Homepage(page);
-        await homepage.clickSearchBar();
-        await homepage.enterTextInSearchbar('.pdf');
-        await homepage.clickSearchIcon();
-        await homepage.doubleClickFirstFile();
-
+        await homepage.searchFile('.pdf');
     });
+
+
+    await test.step('search_bmf_file', async () => {
+        const homepage = new Homepage(page);
+        await homepage.searchFile('.bmf');
+    });
+
 
 
 });

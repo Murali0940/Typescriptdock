@@ -1,15 +1,27 @@
 {
   "name": "typescriptjavadock",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "description": "Playwright TypeScript automation framework with MCP",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "mcp": "tsx mcp-server/server.ts"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "mcp"
+  ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
+    "@modelcontextprotocol/server": "latest",
     "@playwright/test": "^1.62.1",
-    "@types/node": "^26.4.0"
+    "@types/node": "^26.4.0",
+    "tsx": "latest",
+    "typescript": "latest",
+    "zod": "latest"
   }
 }
